@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-COPY /var/lib/jenkins/workspace/jenkins-docker/go-artifact .
+COPY ../../../jenkins/workspace/jenkins-docker/go-artifact .
 
 WORKDIR .
 
