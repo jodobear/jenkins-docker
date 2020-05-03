@@ -4,6 +4,6 @@ RUN mkdir ./app
 
 WORKDIR ./app
 
-ADD . ./app
+COPY . ./app
 
 Entrypoint ./go-artifact
