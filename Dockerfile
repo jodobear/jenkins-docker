@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-ORKDIR /usr/app
+WORKDIR /usr/app
 
 COPY ./go-artifact /usr/app
 
