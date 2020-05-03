@@ -6,4 +6,4 @@ WORKDIR ./app
 
 COPY . ./app
 
-Entrypoint ./go-artifact
+CMD ["./go-artifact"]
