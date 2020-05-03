@@ -1,7 +1,7 @@
 FROM golang:alpine
 
-COPY ./go-artifact /usr/app
+COPY ./go-artifact .
 
-WORKDIR /usr/app
+WORKDIR .
 
-RUN /usr/app/go-artifact
+RUN ./go-artifact
