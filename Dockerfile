@@ -2,4 +2,4 @@ FROM golang:alpine
 
 WORKDIR ./app
 
-ENTRYPOINT ./app/go-artifact
+ENTRYPOINT /var/lib/jenkins/workspace/jenkins-docker/app/go-artifact
