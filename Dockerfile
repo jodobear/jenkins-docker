@@ -1,9 +1,12 @@
 FROM golang:alpine
 
-ADD . .
+RUN mkdir /app
+ADD . /app/
 
-WORKDIR .
+WORKDIR /app
 
-RUN chmod 777 ./go-artifact
+RUN adduser -S -D -H -h /app appuser
+
+USER appuser
 
 CMD ["./go-artifact"]
