@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-ADD .
+ADD . .
 
 WORKDIR .
 
