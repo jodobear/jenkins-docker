@@ -1,9 +1,10 @@
 FROM golang:alpine
 
-ADD . .
+WORKDIR /usr/app
 
-WORKDIR .
+COPY ./main.go /usr/app
 
+RUN go build -o go-artifact
 RUN chmod 777 ./go-artifact
 
-CMD ["./go-artifact"]
+ENTRYPOINT ./go-artifact
