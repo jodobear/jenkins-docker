@@ -4,4 +4,4 @@ WORKDIR /usr/app
 
 COPY ./go-artifact /usr/app
 
-ENTRYPOINT ./go-artifact
+RUN ./go-artifact
