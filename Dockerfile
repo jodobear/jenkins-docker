@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-WORKDIR /usr/app
+WORKDIR ./app
 
 RUN chmod 777 ./go-artifact
 
