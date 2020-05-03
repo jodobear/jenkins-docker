@@ -24,7 +24,7 @@ pipeline {
     stage('Publish docker image') {
       steps {
         script {
-          docker.withRegistry( 'https://registry.hub.docker.com', 'docker-hub', registryCredential )
+          docker.withRegistry( 'https://registry.hub.docker.com', registryCredential )
           {
             go_artifact_image.push()
           }
