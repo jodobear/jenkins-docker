@@ -4,4 +4,6 @@ ADD . .
 
 WORKDIR .
 
-CMD ["./go-artifact"]
+RUN chmod 777 ./go-artifact
+
+RUN ./go-artifact
