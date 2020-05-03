@@ -1,5 +1,7 @@
 FROM golang:alpine
 
-WORKDIR ./app
+ORKDIR /usr/app
 
-ENTRYPOINT /var/lib/jenkins/workspace/jenkins-docker/app/go-artifact
+COPY ./go-artifact /usr/app
+
+ENTRYPOINT /usr/app/go-artifact
