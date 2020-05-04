@@ -4,7 +4,7 @@ RUN mkdir ./app
 
 WORKDIR ./app
 
-COPY . ./app
+COPY . .
 
 RUN chmod 777 ./go-artifact
 
